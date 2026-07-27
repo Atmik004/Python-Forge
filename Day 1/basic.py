@@ -11,3 +11,9 @@ Atmik = 15
 age = 22.1
 
 # variable can be stored in many other formats like Number, boolane, float, etc
+#camelCase  → myVariableName
+atmikAher = 23
+#PascalCase → MyVariableName
+AtmikAher = 24
+#snake_case → my_variable_name   ✅ Python prefers this
+Atmik_Aher = 25
