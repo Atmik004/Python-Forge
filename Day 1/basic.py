@@ -17,3 +17,10 @@ atmikAher = 23
 AtmikAher = 24
 #snake_case → my_variable_name   ✅ Python prefers this
 Atmik_Aher = 25
+
+# Data Types -
+
+print(type(42))       # <class 'int'>
+print(type(3.14))     # <class 'float'>
+print(type("hello"))  # <class 'str'>
+print(type(True))     # <class 'bool'>
