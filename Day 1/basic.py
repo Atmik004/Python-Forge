@@ -44,3 +44,24 @@ print(c[15::1])
 print(c[:6:1])
 
 print(c[::-1])
+
+#Type Conversion -
+d = "12"
+e = int(d)
+print(type(d))
+print(type(e))
+
+#boolean -
+f= 22
+g = 12.4
+h = 0
+i = ""
+j = "Aher"
+k = 0.0
+
+print(bool(f))
+print(bool(g))
+print(bool(h))
+print(bool(i))
+print(bool(j))
+print(bool(k))
