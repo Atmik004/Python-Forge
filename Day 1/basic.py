@@ -71,3 +71,87 @@ print(bool(k))
 l = input("What's your Name: ")
 m = int(input("And your age: "))
 print(f"So your name is {l} and you are {m} years old!")
+
+# Operators -
+# +	Addition	10 + 3	13
+# -	Subtraction	10 - 3	7
+# *	Multiplication	10 * 3	30
+# /	Division	10 / 3	3.333…
+# //	Floor Division	10 // 3	3
+# %	Modulus (remainder)	10 % 3	1
+# **	Exponentiation	2 ** 8	256
+
+#Operator	Meaning	       Example	 Result
+# ==	    Equal to	    5 == 5	 True
+#!=	       Not equal to	    5 != 3	 True
+# >	      Greater than	     5 > 3	 True
+# <	       Less than	     5 < 3	 False
+# >=	  Greater or equal	5 >= 5	 True
+# <=	  Less or equal	    3 <= 5	 True
+
+#Logical Operators
+# Operator	    Returns True when…	             Example
+# and	        Both conditions are True	     age > 18 and has_id == True
+# or	        At least one condition is True	 is_admin or is_staff
+# not	        Reverses the boolean	         not is_banned
+
+###Assignment Operators
+
+#Operator	  Meaning	             Equivalent to
+# +=	   Add and assign	          x = x + n
+# -=	  Subtract and assign	      x = x - n
+# *=	  Multiply and assign	      x = x * n
+# /=	  Divide and assign	          x = x / n
+# //=	  Floor divide and assign	  x = x // n
+# %=	  Modulus and assign	      x = x % n
+# **=	  Power and assign	          x = x ** n
+
+# +=
+n = 12
+if n != 21:
+    n +=1
+    print(n)
+else:
+    print("LOL!")
+
+# -=
+if n == 13:
+    n -= 1
+    print(n)
+else:
+    print("LOL!")
+
+# *=
+if n ==12:
+    n *= 2
+    print(n)
+else:
+    print("LOL!")
+
+# /=
+if n == 24:
+    n /= 2
+    print(n)
+else:
+    print("LOL!")
+
+# //=
+if n == 12.0:
+    n //= 2
+    print(n)
+else:
+    print("LOL!")
+
+# **=
+if n == 6.0:
+    n ** 2
+    print(n)
+else:
+    print("LOL!")
+
+# %=
+if n == 6.0:
+    n %= 2
+    print(n)
+else:
+    print("LOL!")
