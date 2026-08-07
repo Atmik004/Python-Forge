@@ -65,3 +65,9 @@ print(bool(h))
 print(bool(i))
 print(bool(j))
 print(bool(k))
+
+#Input Output and Operators
+
+l = input("What's your Name: ")
+m = int(input("And your age: "))
+print(f"So your name is {l} and you are {m} years old!")
