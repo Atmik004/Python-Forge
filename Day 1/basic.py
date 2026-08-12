@@ -184,3 +184,76 @@ not	         Reverses the boolean	            not is_banned
 
 #### Conditional Statements ---
 
+'''
+Types at a Glance ....
+
+Statement	      When to use it
+if	              You have one condition to check
+if-else	          Two paths — True or False
+if-elif-else	  Multiple conditions checked one by one
+'''
+
+# Challenge -
+#Q1. Accept two numbers and print the greatest between them.
+
+o = int(input("Give me a number: "))
+p = int(input("Give me a number: "))
+
+if o == p:
+    print("Both are same!")
+elif o > p:
+    print(f"Greater number is {o}")
+elif o < p:
+    print(f"Greater number is {p}")
+else:
+    print("Number is invalid!")
+
+#Q2. Accept gender from user and print a greeting message.
+
+q = str(input("What is your gender(M/F): ")).strip() .lower()
+if q == "m":
+    print("Good Morning Sir!")
+elif q == "f":
+    print("Good Morning Ma'am!")
+else:
+    print("Plz.. Choose the correct gender!")
+
+#Q3. Accept an integer and check if it is even or odd.
+
+r = int(input("Drop an Integer: "))
+if r % 2 == 0:
+    print("Even!")
+else:
+    print("Odd!")
+
+# Q4. Accept name and age — check if the user is a valid voter (18+).
+
+s = int(input("What's you age? : "))
+if s >= 18:
+    print(f"Hello {a}, you are valid voter!!")
+elif s < 18:
+    print(f"You may need to wait little more years until you can vote!!")
+else:
+    print("Your age must be 18 or above 18 to vote!")
+
+#Q5. Accept a year and check if it is a leap year.
+
+y = int(input("Enter the Year: "))
+if (y % 4 == 0) and ((y % 400 == 0) or (y % 100 != 0)):
+    print(f"{y} is an Leap Year!!")
+else:
+    print(f"{y} is not a Leap Year!")
+
+# Q6 — Temperature Ladder Accept temperature in °C and print a description.
+
+t = int(input("What's the Temperature in °C: "))
+if t >= 40:
+    print("I can feel the heat waves! 🔥")
+elif t <= 39 and t >= 25:
+    print("Pleasant 😊")
+elif t <= 24 and t >= 8:
+    print("It's chilly out there!")
+elif t < 7:
+    print("Freezing Cold 🥶")
+else:
+    print("plz take care!")
