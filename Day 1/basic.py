@@ -155,3 +155,32 @@ if n == 6.0:
     print(n)
 else:
     print("LOL!")
+
+# Comparision Operators
+
+'''
+(==, <, >, <=, >=, !=)
+
+Operator	Meaning	         Example	 Result
+==	         Equal to	     5 == 5	     True
+!=	       Not equal to	     5 != 3	     True
+>	       Greater than	     5 > 3	     True
+<	         Less than	     5 < 3	     False
+>=	       Greater or equal	 5 >= 5	     True
+<=	       Less or equal	 3 <= 5	     True
+
+'''
+
+# Logical Operators
+
+'''
+Operator	 Returns True when…	                Example
+and	         Both conditions are True	        age > 18 and has_id == True
+or	         At least one condition is True	    is_admin or is_staff
+not	         Reverses the boolean	            not is_banned
+
+'''
+
+
+#### Conditional Statements ---
+
