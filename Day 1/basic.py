@@ -257,3 +257,64 @@ elif t < 7:
     print("Freezing Cold 🥶")
 else:
     print("plz take care!")
+
+# Loops
+
+# For Loop
+
+'''
+The range() Function
+range() generates a sequence of numbers. Think of it as saying "count from here to there".
+
+range(stop)              # 0 up to stop-1
+range(start, stop)       # start up to stop-1
+range(start, stop, step) # start, jumping by step
+
+list(range(5))           # [0, 1, 2, 3, 4]
+list(range(1,6))         # [1, 2, 3, 4, 5]
+list(range(0,10,2))      # [0, 2, 4, 6, 8]
+'''
+
+
+#For Loop with Numbers
+for i in range(1, 6):
+    print(i)
+
+# Output: 1  2  3  4  5
+
+
+# Q. Print 5's table using for loop
+for i in range(5,51,5):
+    print(i)
+
+# Q. Table for give number
+u = int(input("What table do you want: "))
+for i in range(u, (u*10)+1, u):
+    print(u)
+
+
+name = "Atmik"
+# Method 1 — via index
+for i in range(len(name)):
+    print(name[i])
+
+# Method 2 — direct (simpler!)
+for char in name:
+    print(char)
+
+# Method 3 - Manual.
+for i in range(len(a)):
+    print(f"{i} : {a[i]}")
+
+#📝 For Loop Questions
+
+#Q1. Print "Hello World" n times.
+#r = int(input("How many times do you want to print: "))
+for r in range(r):
+    print("Hello World!")
+
+#Q2. Print natural numbers from 1 to n.
+r = int(input("How many numbers do you want to print: "))
+for r in range(r+1):
+    print(r)
+
