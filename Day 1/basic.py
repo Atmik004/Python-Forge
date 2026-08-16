@@ -306,6 +306,7 @@ for char in name:
 for i in range(len(a)):
     print(f"{i} : {a[i]}")
 
+
 #📝 For Loop Questions
 
 #Q1. Print "Hello World" n times.
@@ -315,6 +316,141 @@ for r in range(r):
 
 #Q2. Print natural numbers from 1 to n.
 r = int(input("How many numbers do you want to print: "))
-for r in range(r+1):
-    print(r)
+for i in range(r+1):
+    print(i)
 
+#Q3. Reverse for loop — print n down to 1.
+for i in range(r,0,-1):
+    print(i)
+
+#Q4. Print the multiplication table of a number.
+for i in range(1,11,1):
+    print(f"{r} x {i} = {r*i}")
+
+#Q4. Sum of first n natural numbers.
+for i in range(r+1):
+    r = r + i
+
+print(r)
+
+# Q6. Factorial of a number.
+f = 1
+for i in range(r+1):
+    f = f * i
+print(f)
+
+# Q7. Print sum of all even and odd numbers in a range separately.
+o = int(input("Tell the End Number: "))
+even=0
+odd=0
+for s in range(1,o+1,1):
+    if s % 2 ==0:
+        even = even + s
+    else:
+        odd = odd + s
+
+print(f"Odd Number Sum - {odd}")
+print(f"Even Number Sum - {even}")
+
+# Q8. Print all factors of a number.
+
+f = int(input("Enter the Number for Factors: "))
+for i in range(1,f+1):
+    if f % i == 0:
+        print(i)
+
+# Q9. Check if a number is perfect (sum of factors = the number itself).
+factorsum = 0
+for i in range(1, f):
+    if f % i == 0:
+        factorsum = factorsum + i
+
+if factorsum == f:
+    print(f"Sum of all factor sum is equal to the given Number {factorsum} = {f}")
+else:
+    print(f"Sum of all factor sum is NOT equal to the given Number {factorsum} != {f}")
+
+# Q10. Check if a number is prime.
+PS = 0
+P = int(input("To check Prime Number : "))
+for prime in range(1, P+1):
+    if P % prime ==0:
+        PS = PS + prime
+if PS == P+1:
+    print(f"{P} is a Prime Number")
+else:
+    print(f"{P} is Not a Prime Number")
+'''
+## using Counting function---
+Alternate way to do the same problem is ====
+PS = 0
+P = int(input("To check Prime Number : "))
+for prime in range(1, P+1):
+    if P % prime ==0:
+        PS = PS + 1
+if PS == 2:
+    print(f"{P} is a Prime Number")
+else:
+    print(f"{P} is Not a Prime Number")
+'''
+
+# Q11. Reverse a string without using built-in functions.
+#print(a[::-1]) it is using built in funtion
+rev =""
+for i in range(len(a)-1,-1,-1):
+    rev = rev + a[i]
+print(rev)
+
+#Q12. Check if a string is a palindrome.
+rev =""
+for i in range(len(a)-1,-1,-1):
+    rev = rev + a[i]
+if rev==a:
+    print("Palindrome!")
+else:
+    print("Not a Palindrome!")
+
+# Q13. Count letters, digits, and special symbols in a string.
+spec = "asdf234*&%$asdhj213*^"
+digit = 0
+spechar = 0
+char = 0
+for i in spec:
+    if i.isdigit():
+        digit = digit + 1
+    elif i.isalpha():
+        char = char + 1
+    else:
+        spechar = spechar + 1
+print(f"The Number is in String is {digit}")
+print(f"The Alphabets in the string is {char}")
+print(f"The Special Signs in the string is {spechar}")
+
+### While Loop-
+'''
+The while loop keeps running as long as a condition is True. You use it when you don't know how many times you'll need to repeat.
+
+count = 1
+while count <= 5:
+    print(count)
+    count += 1
+
+# Output: 1  2  3  4  5
+'''
+# Q1. Separate each digit of a number and print on a new line.
+# Q2. Accept a number and print its reverse.
+
+dig = int(input("Enter the number- "))
+rev = 0
+copy = dig
+while dig > 0:
+    rev = rev * 10 + dig%10
+    dig = dig // 10
+
+print(rev)
+
+# Q3. Check if a number is palindromic (equal to its reverse).
+if rev == copy:
+    print("Palindrome!")
+else:
+    print("Not a Palindrome!")
