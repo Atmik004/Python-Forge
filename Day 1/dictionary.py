@@ -53,3 +53,29 @@ print(d.values())
 print(d)
 
 #Traversing (loops)
+
+d = {10:100, 20:200, 30:300, 40:400, 5:500}
+
+for i in d:
+    print(i)
+    print(d[i])
+    print(f"Keys - {i} Values - {d[i]}")
+
+#Questions
+
+#Q.1  Merge two dictionaries into one.
+
+d1 = {"a":10, "b":20, "c":30}
+d2 = {"d":40, "e":50, "f":60}
+
+for i in d2:
+    d1[i]=d2[i]
+print(d1)
+
+#Q.2 Sum of the dic
+sum = 0
+for i in d1:
+    sum += d1[i]
+
+print(sum)
+
