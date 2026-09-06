@@ -8,3 +8,6 @@ Its syntax looks almost like plain English,
 which is why it's the most beginner-friendly language
 in the world — and at the same time, powerful enough to run
 Instagram, YouTube, and NASA systems.
+
+Python is very impressive language and i have a lots of things to lean about the
+language this will be an intersting jourany as i grow.
