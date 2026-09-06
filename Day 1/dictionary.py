@@ -79,3 +79,27 @@ for i in d1:
 
 print(sum)
 
+#Q. 3 Count the same value
+
+c = ["a", "b", "c", "d", "d", "d", "c", "b", "c", "b"]
+d4 ={}
+for i in c:
+    if i in d4.keys():
+        d4[i] = d4[i] + 1
+    else:
+        d4[i] = 1
+
+print(d4)
+
+# add the two value of same keys
+
+d1 = {"a":10, "b":20, "c":30}
+d2 = {"c":40, "d":50, "e":60}
+
+for i in d2:
+    if i in d1.keys():
+        d1[i] = d1[i] + d2[i]
+    else:
+        d1[i] = d2[i]
+
+print(d1)
